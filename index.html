@@ -331,24 +331,24 @@
         }
 
         /* ===== CONTACT =====*/
-        .contact__input {
-          width: 100%;
-          font-size: var(--normal-font-size);
-          font-weight: var(--font-semi);
-          padding: 1rem;
-          border-radius: 0.5rem;
-          border: 1.5px solid var(--second-color);
-          outline: none;
-          margin-bottom: var(--mb-4);
-        }
-        .contact__button {
-          display: block;
-          border: none;
-          outline: none;
-          font-size: var(--normal-font-size);
-          cursor: pointer;
-          margin-left: auto;
-        }
+       .contact__info {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.contact__text {
+    margin: 1rem 0;
+}
+
+.contact__link {
+    color: var(--first-color);
+    text-decoration: none;
+}
+
+.contact__link:hover {
+    text-decoration: underline;
+}
+
 
         /* ===== FOOTER =====*/
         .footer {
@@ -665,18 +665,29 @@ My journey in tech is driven by an eagerness to understand how things work and h
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enter" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
+    <div class="contact__container bd-grid">
+        <div class="contact__info">
+            
+            <p class="contact__text">
+                <strong>📞 Phone:</strong><br>
+                <a href="tel:+918277526309" class="contact__link">
+                    +91 8277526309
+                </a>
+            </p>
+
+            <p class="contact__text">
+                <strong>📧 Email:</strong><br>
+                <a href="mailtonfernandies@gmail.com" class="contact__link">
+                    miltonfrenandies@gmail.com
+                </a>
+            </p>
+
+        </div>
+    </div>
+</section>
+
 
         <!--===== FOOTER =====-->
         <footer class="footer">
